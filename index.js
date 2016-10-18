@@ -22,7 +22,11 @@ module.exports = function () {
     project.taskMap = {
         wpcss: 'grunt-wp-css',
         addtextdomain: 'grunt-wp-i18n',
-        makepot: 'grunt-wp-i18n'
+        litedomain: 'grunt-wp-i18n',
+        makepot: 'grunt-wp-i18n',
+        sync: 'grunt-sync',
+        watch: 'grunt-contrib-watch',
+        replace: 'grunt-text-replace',
     };
 
 
