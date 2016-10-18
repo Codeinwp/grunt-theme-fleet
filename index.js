@@ -59,7 +59,6 @@ module.exports = function () {
         '!node_modules/**',
         '!logs/**'
     ];
-    project.pkg =  grunt.file.readJSON('./package.json');
 
 
     return project;

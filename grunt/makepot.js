@@ -4,15 +4,15 @@ module.exports = {
     theme: {
         options: {
             domainPath: '<%= paths.languages %>',
-            potFilename: '<%= pkg.theme.textdomain %>.pot',
+            potFilename: '<%= package.theme.textdomain %>.pot',
             exclude: [
                 '<%= paths.vendor %>.*'
             ],
             potHeaders: {
                 poedit: true,
-                'report-msgid-bugs-to': '<%= pkg.pot.reportmsgidbugsto %>',
-                'language-team': '<%= pkg.pot.languageteam %>',
-                'last-translator': '<%= pkg.pot.lasttranslator %>'
+                'report-msgid-bugs-to': '<%= package.pot.reportmsgidbugsto %>',
+                'language-team': '<%= package.pot.languageteam %>',
+                'last-translator': '<%= package.pot.lasttranslator %>'
             },
             type: 'wp-theme'
         },

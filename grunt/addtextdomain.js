@@ -2,7 +2,7 @@
 // https://github.com/blazersix/grunt-wp-i18n
 module.exports = {
     options: {
-        textdomain: '<%= pkg.theme.textdomain %>',
+        textdomain: '<%= package.theme.textdomain %>',
     },
     theme: {
         files: {
