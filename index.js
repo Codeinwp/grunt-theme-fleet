@@ -6,7 +6,7 @@ module.exports = function () {
         project = {};
 
     project.paths = {
-        grunt: 'grunt/',
+        config: 'grunt/',
         languages: 'languages/',
         logs: 'logs/',
         images: 'images/',
@@ -14,7 +14,7 @@ module.exports = function () {
     };
 
     project.paths.global = {
-        grunt: path.join(__dirname, '/grunt/')
+        config: path.join(__dirname, 'grunt/')
     };
 
     project.taskMap = {
@@ -24,7 +24,9 @@ module.exports = function () {
     };
 
 
-    project.files = {};
+    project.files = {
+        config: project.paths.config       + '**/*.js',
+    };
     project.files.php = [
         '*.php',
         '**/*.php',
