@@ -1,0 +1,29 @@
+{
+  "name": "grunt-theme-fleet",
+  "version": "1.0.0",
+  "description": "Themeisle grunt task suite for theme development",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "author": "ThemeIsle <friends@themeisle.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeinwp/grunt-theme-fleet.git"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "grunt": "~0.4.5",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-phpcbf": "^0.1.0",
+    "grunt-phpcs": "^0.4.0",
+    "grunt-phplint": "0.0.8",
+    "grunt-postcss": "^0.8.0",
+    "grunt-wp-css": "^0.2.1",
+    "grunt-wp-i18n": "^0.5.4",
+    "load-grunt-config": "^0.19.2",
+    "time-grunt": "^1.4.0"
+  }
+}
