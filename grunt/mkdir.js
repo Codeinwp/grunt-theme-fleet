@@ -9,7 +9,7 @@ module.exports = {
 
     lite: {
         options: {
-            create: ['../<%= pkg.name %>-lite']
+            create: ['../<%= package.name %>-lite']
         }
     }
 };
