@@ -3,7 +3,13 @@
 module.exports = {
     logs: {
         options: {
-            create: ['<%= paths.logs %>']
+            create: ['logs']
+        }
+    },
+
+    lite: {
+        options: {
+            create: ['../<%= pkg.name %>-lite']
         }
     }
 };

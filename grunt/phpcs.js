@@ -2,16 +2,16 @@
 // https://github.com/SaschaGalley/grunt-phpcs
 module.exports = {
     options: {
-        ignoreExitCode: true,
+        ignoreExitCode: true
     },
     theme: {
         options: {
             standard: 'phpcs.xml',
             reportFile: '<%= paths.logs %>phpcs.log',
-            extensions: 'php',
+            extensions: 'php'
         },
         src: [
             '<%= files.php %>'
-        ],
-    },
+        ]
+    }
 };

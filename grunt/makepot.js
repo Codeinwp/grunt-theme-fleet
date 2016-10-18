@@ -5,9 +5,6 @@ module.exports = {
         options: {
             domainPath: '<%= paths.languages %>',
             potFilename: '<%= package.theme.textdomain %>.pot',
-            exclude: [
-                '<%= paths.vendor %>.*'
-            ],
             potHeaders: {
                 poedit: true,
                 'report-msgid-bugs-to': '<%= package.pot.reportmsgidbugsto %>',

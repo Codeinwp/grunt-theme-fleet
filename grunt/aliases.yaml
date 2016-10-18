@@ -1,17 +1,14 @@
 #Check code of the theme
 check:
-  - 'mkdir:logs'
-  - 'imagemin'
+  - 'newer:imagemin'
   - 'phpcbf'
-  - 'postcss:build'
+  - 'newer:postcss:build'
   - 'makepot'
-  - 'addtextdomain'
+  - 'newer:addtextdomain:main'
   - 'check:css'
-  - 'check:i18n'
-  - 'check:php'
-  - 'check:js'
+  - 'travis'
 'check:css':
-  - 'wpcss'
+  - 'newer:wpcss'
 'check:php':
   - 'phplint'
   - 'phpcs'
@@ -20,7 +17,16 @@ check:
 'check:i18n':
   - 'checktextdomain'
 
+# Watch and sync with lite folder.
+live:
+  - 'watch'
 
 # Default task
 default:
   - check
+
+travis:
+  - 'mkdir:logs'
+  - 'check:php'
+  - 'check:js'
+  - 'check:i18n'
