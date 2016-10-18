@@ -7,7 +7,7 @@ module.exports = {
             standard: 'phpcs.xml'
         },
         files: {
-            src:['<%= files.php %>']
+            src: ['<%= files.php %>']
         }
     }
 };

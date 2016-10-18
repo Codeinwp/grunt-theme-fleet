@@ -24,6 +24,7 @@ module.exports = function () {
     };
 
 
+    project.files = {};
     project.files.php = [
         '*.php',
         '**/*.php',
