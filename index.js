@@ -7,6 +7,7 @@ module.exports = function () {
 
     project.paths = {
         config: 'grunt/',
+        grunt: 'grunt/',
         languages: 'languages/',
         logs: 'logs/',
         images: 'images/',
@@ -14,7 +15,8 @@ module.exports = function () {
     };
 
     project.paths.global = {
-        config: path.join(__dirname, 'grunt/')
+        config: path.join(__dirname, 'grunt/'),
+        grunt: path.join(__dirname, 'grunt/')
     };
 
     project.taskMap = {
@@ -57,6 +59,6 @@ module.exports = function () {
         '!node_modules/**',
         '!logs/**'
     ];
-
+    project.pkg =  grunt.file.readJSON('./package.json')
     return project;
 };
