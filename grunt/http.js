@@ -42,7 +42,7 @@ module.exports = {
                 console.log(body)
             },
             form: {
-                mode: 'latest',
+                mode: 'compare',
                 slug: '<%= package.wraithSlug %>'
             }
         }
