@@ -16,6 +16,9 @@ check:
   - 'jshint'
 'check:i18n':
   - 'checktextdomain'
+wraith:
+  - 'http:themeisle_crawl_service'
+  - 'http:themeisle_latest_service'
 
 # Watch and sync with lite folder.
 live:
