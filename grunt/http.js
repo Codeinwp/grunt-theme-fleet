@@ -6,9 +6,9 @@ module.exports = {
             method: 'POST',
             callback: function(error, response, body) {
                 if(error != null) {
-                    grunt.log.error(error)
+                    console.log(error)
                 }
-                grunt.log.write(body)
+                console.log(body)
             },
             form: {
                 mode: 'sitemaps'
@@ -21,9 +21,9 @@ module.exports = {
             method: 'POST',
             callback: function(error, response, body) {
                 if(error != null) {
-                    grunt.log.error(error)
+                    console.log(error)
                 }
-                grunt.log.write(body)
+                console.log(body)
             },
             form: {
                 mode: 'crawl',
@@ -37,9 +37,9 @@ module.exports = {
             method: 'POST',
             callback: function(error, response, body) {
                 if(error != null) {
-                    grunt.log.error(error)
+                    console.log(error)
                 }
-                grunt.log.write(body)
+                console.log(body)
             },
             form: {
                 mode: 'latest',

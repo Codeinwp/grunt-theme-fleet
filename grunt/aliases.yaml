@@ -17,8 +17,8 @@ check:
 'check:i18n':
   - 'checktextdomain'
 wraith:
-  - 'themeisle_crawl_service'
-  - 'themeisle_latest_service'
+  - 'http:themeisle_crawl_service'
+  - 'http:themeisle_latest_service'
 
 # Watch and sync with lite folder.
 live:
