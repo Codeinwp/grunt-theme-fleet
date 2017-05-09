@@ -33,3 +33,10 @@ travis:
   - 'check:php'
   - 'check:js'
   - 'check:i18n'
+
+
+deploy:
+  - 'mkdir:dist'
+  - 'mkdir:artifact'
+  - 'copy:deploy'
+  - 'compress'
