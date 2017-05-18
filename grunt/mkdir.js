@@ -11,5 +11,15 @@ module.exports = {
         options: {
             create: ['../<%= package.name %>-lite']
         }
+    },
+    dist: {
+        options: {
+            create: ['dist']
+        }
+    },
+    artifact: {
+        options: {
+            create: ['artifact']
+        }
     }
 };
