@@ -35,8 +35,12 @@ travis:
   - 'check:i18n'
 
 
+
 deploy:
+  - 'generate'
   - 'mkdir:dist'
   - 'mkdir:artifact'
-  - 'copy:deploy'
-  - 'compress'
+  - 'copy:full'
+  - 'compress:full'
+  - 'copy:lite'
+  - 'compress:lite'

@@ -4,10 +4,10 @@
 
 module.exports = function (grunt, options) {
 	return {
-		deploy: {
+		full: {
 			files: [{
 				src: ['**'],
-				dest: 'dist/',
+				dest: 'dist/<%= package.name %>/',
 				filter: function (filepath) {
 					var exclude = grunt.file.read('.distignore');
 					var cwd = grunt.file.read('.distignore').split(/\r|\n/);
@@ -24,12 +24,12 @@ module.exports = function (grunt, options) {
 				}
 			}]
 		},
-		deploy_lite: {
+		lite: {
 			files: [{
 				src: ['**'],
 				expand: true,
 				cwd: '../<%= package.litename %>/',
-				dest: '../<%= package.name %>/dist/'
+				dest: '../<%= package.name %>/dist/<%= package.litename %>/'
 			}
 			]
 		}
