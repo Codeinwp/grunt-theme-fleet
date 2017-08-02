@@ -1,6 +1,6 @@
 // https://github.com/SaschaGalley/grunt-phpunit
 module.exports = {
-    plugin: {
+    theme: {
         classes: {
             dir: 'tests/'
         },
