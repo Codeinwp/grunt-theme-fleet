@@ -31,6 +31,7 @@
     "grunt-contrib-compress": "^1.4.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-rsync": "^2.0.1",
+    "grunt-phpunit": "^0.3.6",
     "grunt-version": "1.x"
   }
 }
