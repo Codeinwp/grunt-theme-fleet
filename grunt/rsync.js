@@ -17,9 +17,18 @@ module.exports = function (grunt, options) {
 		},
 		prod: {
 			options: {
-				src: "dist/<%= package.litename %>/",
+				src: "dist/<%= package.name %>/",
 				port: (process.env.DEMO_THEMEISLE_PORT) ? process.env.DEMO_THEMEISLE_PORT : 22,
 				dest: process.env.DEMO_THEMEISLE_PATH,
+				host: process.env.DEMO_THEMEISLE_USER + "@" + process.env.DEMO_THEMEISLE_HOST,
+				delete: true // Careful this option could cause data loss, read the docs!
+			}
+		},
+		lite: {
+			options: {
+				src: "dist/<%= package.litename %>/",
+				port: (process.env.DEMO_THEMEISLE_PORT) ? process.env.DEMO_THEMEISLE_PORT : 22,
+				dest: process.env.DEMO_THEMEISLE_LITE_PATH,
 				host: process.env.DEMO_THEMEISLE_USER + "@" + process.env.DEMO_THEMEISLE_HOST,
 				delete: true // Careful this option could cause data loss, read the docs!
 			}
