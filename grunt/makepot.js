@@ -11,7 +11,8 @@ module.exports = {
                 'language-team': '<%= package.pot.languageteam %>',
                 'last-translator': '<%= package.pot.lasttranslator %>'
             },
-            type: 'wp-theme'
+            type: 'wp-theme',
+            exclude: ['vendor/*'],
         },
     },
 };
