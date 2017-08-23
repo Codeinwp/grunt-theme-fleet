@@ -34,7 +34,13 @@ travis:
   - 'check:js'
   - 'check:i18n'
 
-
+local:
+  - 'mkdir:logs'
+  - 'phpcbf'
+  - 'phplint'
+  - 'phpcs'
+  - 'check:js'
+  - 'check:i18n'
 
 deploy:
   - 'generate'
