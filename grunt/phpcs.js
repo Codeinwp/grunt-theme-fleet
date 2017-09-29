@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         options: {
             standard: 'phpcs.xml',
+            showSniffCodes : true,
             reportFile: '<%= paths.logs %>phpcs.log',
             extensions: 'php'
         },
