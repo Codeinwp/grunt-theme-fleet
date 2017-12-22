@@ -64,7 +64,10 @@ module.exports = function () {
         '!node_modules/**',
         '!logs/**'
     ];
-
+	project.hash = {
+		file_name: 'themeisle-hash.json',
+		exclude: [ '!languages/**/*', '!tests/**/*', '!logs/**/*', '!grunt/**/*' ]
+	}
 
     return project;
 };

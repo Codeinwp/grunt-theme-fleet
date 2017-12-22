@@ -44,6 +44,7 @@ local:
 
 deploy:
   - 'generate'
+  - 'cachebuster'
   - 'mkdir:dist'
   - 'mkdir:artifact'
   - 'copy:full'

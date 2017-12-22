@@ -32,6 +32,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-rsync": "^2.0.1",
     "grunt-phpunit": "^0.3.6",
+    "grunt-cachebuster": "^0.1.7",
     "grunt-version": "1.x"
   }
 }
