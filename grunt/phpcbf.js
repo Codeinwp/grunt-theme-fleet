@@ -4,7 +4,8 @@
 module.exports = {
     theme: {
         options: {
-            standard: 'phpcs.xml'
+            standard: 'phpcs.xml',
+            noPatch: false,
         },
         files: {
             src:['<%= files.php %>']
