@@ -27,7 +27,6 @@ module.exports = function () {
         sync: 'grunt-sync',
         watch: 'grunt-contrib-watch',
         replace: 'grunt-text-replace',
-        http: 'grunt-http'
     };
 
 
