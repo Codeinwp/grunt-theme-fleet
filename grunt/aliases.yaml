@@ -43,6 +43,7 @@ local:
   - 'check:i18n'
 
 deploy:
+  - 'addtextdomain:composerDeps'
   - 'generate'
   - 'cachebuster'
   - 'mkdir:dist'

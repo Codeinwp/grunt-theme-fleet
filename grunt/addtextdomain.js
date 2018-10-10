@@ -12,6 +12,17 @@ module.exports = {
                 ],
             },
         },
+    },
+    composerDeps: {
+        options: {
+            textdomain: '<%= package.theme.textdomain %>',
+            updateDomains: ['textdomain']
+        },
+        files: {
+            src: [
+                'vendor/codeinwp/**/*.php'
+            ]
+        }
     }
 };
 
