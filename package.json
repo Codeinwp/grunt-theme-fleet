@@ -29,6 +29,7 @@
     "time-grunt": "^1.4.0",
     "grunt-contrib-compress": "^1.4.1",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-wp-readme-to-markdown": "^2.0.1",
     "grunt-rsync": "^2.0.1",
     "grunt-phpunit": "^0.3.6",
     "grunt-cachebuster": "^0.1.7",
