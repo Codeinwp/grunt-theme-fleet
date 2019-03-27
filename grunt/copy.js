@@ -9,14 +9,22 @@ module.exports = function (grunt, options) {
 				src: ['**'],
 				dest: 'dist/<%= package.name %>/',
 				filter: function (filepath) {
-					var exclude = grunt.file.read('.distignore');
+					var unixifyPath = function (filepath) {
+
+						var isWindows = process.platform === 'win32';
+						if (isWindows) {
+							return filepath.replace(/\\/g, '/');
+						} else {
+							return filepath;
+						}
+					};
 					var cwd = grunt.file.read('.distignore').split(/\r|\n/);
 					cwd = cwd.filter(function (e) {
 						return e
 					});
 					for (index in cwd) {
 						var file = cwd[index];
-						if (filepath.indexOf(file) === 0) {
+						if (unixifyPath(filepath).indexOf(unixifyPath(file)) === 0) {
 							return false;
 						}
 					}
