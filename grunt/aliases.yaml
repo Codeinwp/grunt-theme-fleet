@@ -10,7 +10,6 @@ check:
 'check:css':
   - 'newer:wpcss'
 'check:php':
-  - 'phplint'
   - 'phpcs'
 'check:js':
   - 'jshint'
