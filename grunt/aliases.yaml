@@ -7,8 +7,10 @@ check:
   - 'newer:addtextdomain:main'
   - 'check:css'
   - 'travis'
-'check:css':
-  - 'newer:wpcss'
+check:css:
+  descriptions: "Css possible checks"
+  tasks: []
+
 'check:php':
   - 'phpcs'
 'check:js':
